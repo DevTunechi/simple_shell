@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- *buffers chained commands
- *@info: parameter struct
- *@buf: address of buffer
- *@len: address of len var
- *Goodnews and Olatunji
- *Return: bytes read
+ * input_buf -  buffers chained commands
+ * @info: parameter struct
+ * @buf: address of buffer
+ * @len: address of len var
+ * Goodnews and Olatunji
+ * Return: bytes read
  */
 
 ssize_t input_buf(info_t *info, char **buf, size_t *len)
@@ -43,10 +43,10 @@ return (r);
 }
 
 /**
- *gets a line minus the newline
- *@info: parameter struct
- *Goodnews and Olatunji
- *Return: bytes read
+ * get_input - gets a line minus the newline
+ * @info: parameter struct
+ * Authors: Goodnews and Olatunji
+ * Return: bytes read
  */
 
 ssize_t get_input(info_t *info)
@@ -84,12 +84,12 @@ return (r);
 }
 
 /**
- *reads a buffer
- *@info: parameter struct
- *@buf: buffer
- *@i: size
- *Goodnews and Olatunji
- *Return: r
+ * read_buf - reads a buffer
+ * @info: parameter struct
+ * @buf: buffer
+ * @i: size
+ * Authors: Goodnews and Olatunji
+ * Return: r
  */
 
 ssize_t read_buf(info_t *info, char *buf, size_t *i)
@@ -104,12 +104,12 @@ return (r);
 }
 
 /**
- *gets the next line of input from STDIN
- *@info: parameter struct
- *@ptr: address of pointer to buffer, preallocated or NULL
- *@length: size of preallocated ptr buffer if not NULL
- *Goodnews and Olatunji
- *Return: s
+ *  _getline - gets the next line of input from STDIN
+ * @info: parameter struct
+ * @ptr: address of pointer to buffer, preallocated or NULL
+ * @length: size of preallocated ptr buffer if not NULL
+ * Authors: Goodnews and Olatunji
+ * Return: s
  */
 
 int _getline(info_t *info, char **ptr, size_t *length)
@@ -146,10 +146,10 @@ return (s);
 }
 
 /**
- *blocks ctrl-C
- *@sig_num: the signal number
- *Goodnews and Olatunji
- *Return: void
+ * sigintHandler - blocks ctrl-C
+ * @sig_num: the signal number
+ * Authors: Goodnews and Olatunji
+ * Return: void
  */
 
 void sigintHandler(__attribute__((unused)) int sig_num)
