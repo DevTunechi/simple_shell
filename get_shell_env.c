@@ -3,7 +3,7 @@
 /**
  * get_environment - Returns a copy of the env variables as a str array.
  * @info: Structure containing potential arguments.
- * Goodnews and Olatunji
+ * Goodnews and OlatunjI
  * Return: The string array representing the environment variables.
  */
 
