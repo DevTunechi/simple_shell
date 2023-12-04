@@ -1,6 +1,13 @@
 #ifndef _SHELL_H_
 #define _SHELL_H_
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <stddef.h>
+
 char *generate_history_file_path(info_t *info);
 int write_history_to_file(info_t *info);
 int read_history_from_file(info_t *info);
@@ -46,5 +53,9 @@ int string_length(char *str);
 int string_compare(char *s1, char *s2);
 char *starts_with(const char *haystack, const char *needle);
 int main(int ac, char **av);
+/* (string_functions.c) */
+char *_strncpy(char *dest, const char *src, size_t n);
+char *_strncat(char *dest, const char *src, size_t n);
+char *_strchr(const char *s, int c);
 
 #endif
