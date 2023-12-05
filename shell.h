@@ -130,17 +130,43 @@ int _custom_myunsetenv(info_t *info);
 int _custom_populate_env_list(info_t *info);
 
 /* alias_history.c */
+
+/**
+ * struct list_s - Linked list structure
+ * @str: String data
+ * @next: Pointer to the next node in the list
+ */
+
+typedef struct list_s
+{
+char *str;
+struct list_s *next;
+}
+list_t;
+
+/**
+ * struct info_s - Information structure for shell
+ * @argc: Number of arguments
+ * @argv: Array of argument strings
+ * @history: Linked list for command history
+ * @alias: Linked list for storing aliases
+ */
+
+typedef struct info_s
+{
+int argc;
+char **argv;
+list_t *history;
+list_t *alias;
+}
+info_t;
+
 int _custom_myhistory(info_t *info);
 int _custom_unset_alias(info_t *info, char *str);
 int _custom_set_alias(info_t *info, char *str);
 int _custom_print_alias(list_t *node);
 int _custom_myalias(info_t *info);
 
-void _print_list(list_t *list);
-char *_custom_strchr(char *s, char c);
-int _custom_delete_node_at_index(list_t **head, unsigned int index);
-list_t *_custom_add_node_end(list_t **head, char *str, int num);
-void _custom_puts(char *str);
 
 /* shell_builtin.c */
 typedef struct info_s
@@ -162,5 +188,22 @@ int _custom_myexit(infor_t *info);
 int _custom_mycd(info_t *info);
 int _custom_myhelp(info_t *info);
 
+/**
+ * struct info_s - A structure holding potential shell arguments.
+ * @readfd: File descriptor for reading.
+ */
+
+/* a_to_i.c */
+typedef struct info_s
+{
+int readfd;
+}
+info_t;
+
+int isatty(int);
+int _interactive_mode(info_t *info);
+int _is_delimiter(char c, char *delim);
+int _custom_is_alpha(int c);
+int _custom_atoi(char *s);
 
 #endif /* SHELL_H */
