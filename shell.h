@@ -115,5 +115,12 @@ int _custom_eputchar(char c);
 int _custom_putfd(char c, int fd);
 int _custom_putsfd(char *str, int fd);
 
+/* env_var.c */
+int _custom_myenv(info_t *info);
+char *_custom_getenv(info_t *info, const char *name);
+int _custom_mysetenv(info_t *info);
+int _custom_myunsetenv(info_t *info);
+int _custom_populate_env_list(info_t *info);
+
 
 #endif /* SHELL_H */
