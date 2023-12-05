@@ -93,5 +93,9 @@ char **get_environment(info_t *info);
 int unset_environment_variable(info_t *info, char *var);
 int set_environment_variable(info_t *info, char *var, char *value);
 
+/* string_functions.c */
+char *_custom_strncpy(char *destination, char *source, int num);
+char *_custom_strncat(char *destination, char *source, int num);
+char *_custom_strchr(char *str, char character);
 
 #endif /* SHELL_H */
