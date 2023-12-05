@@ -13,6 +13,12 @@
 #define BUF_FLUSH '\0'
 #define WRITE_BUF_SIZE 1024
 
+typedef struct info_s
+{
+    list_t *history;
+    list_t *alias;
+} info_t;
+
 /* command_processing.c */
 int determine_chain(char *command);
 int verify_chain(int status, char *chain_delimiter);
@@ -122,5 +128,17 @@ int _custom_mysetenv(info_t *info);
 int _custom_myunsetenv(info_t *info);
 int _custom_populate_env_list(info_t *info);
 
+/* history.c */
+int _custom_myhistory(info_t *info);
+int _custom_unset_alias(info_t *info, char *str);
+int _custom_set_alias(info_t *info, char *str);
+int _custom_print_alias(list_t *node);
+int _custom_myalias(info_t *info);
+
+void _print_list(list_t *list);
+char *_custom_strchr(char *s, char c);
+int _custom_delete_node_at_index(list_t **head, unsigned int index);
+list_t *_custom_add_node_end(list_t **head, char *str, int num);
+void _custom_puts(char *str);
 
 #endif /* SHELL_H */
