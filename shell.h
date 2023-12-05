@@ -98,4 +98,11 @@ char *_custom_strncpy(char *destination, char *source, int num);
 char *_custom_strncat(char *destination, char *source, int num);
 char *_custom_strchr(char *str, char character);
 
+/* handle_error.c */
+int _custom_erratoi(char *str);
+void custom_print_error(info_t *info, char *estr);
+int custom_print_d(int input, int fd);
+char *custom_convert_number(long int num, int base, int flags);
+void custom_remove_comments(char *buffer);
+
 #endif /* SHELL_H */
