@@ -8,6 +8,10 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <sys/stat.h>
+#include <stddef.h> 
+
+#define BUF_FLUSH '\0'
+#define WRITE_BUF_SIZE 1024
 
 /* command_processing.c */
 int determine_chain(char *command);
@@ -104,5 +108,12 @@ void custom_print_error(info_t *info, char *estr);
 int custom_print_d(int input, int fd);
 char *custom_convert_number(long int num, int base, int flags);
 void custom_remove_comments(char *buffer);
+
+/*file_output_utils.c */
+void _custom_eputs(char *str);
+int _custom_eputchar(char c);
+int _custom_putfd(char c, int fd);
+int _custom_putsfd(char *str, int fd);
+
 
 #endif /* SHELL_H */
