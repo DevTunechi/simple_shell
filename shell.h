@@ -8,7 +8,7 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <sys/stat.h>
-#include <stddef.h> 
+#include <stddef.h>
 
 #define BUF_FLUSH '\0'
 #define WRITE_BUF_SIZE 1024
@@ -141,5 +141,26 @@ char *_custom_strchr(char *s, char c);
 int _custom_delete_node_at_index(list_t **head, unsigned int index);
 list_t *_custom_add_node_end(list_t **head, char *str, int num);
 void _custom_puts(char *str);
+
+/* shell_builtin.c */
+typedef struct info_s
+{
+int status;
+int err_num;
+char **argv;
+}
+info_t;
+
+typedef struct list_s
+{
+char *str;
+struct list_s *next;
+}
+list_t;
+
+int _custom_myexit(infor_t *info);
+int _custom_mycd(info_t *info);
+int _custom_myhelp(info_t *info);
+
 
 #endif /* SHELL_H */
