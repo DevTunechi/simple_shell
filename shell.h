@@ -15,9 +15,10 @@
 
 typedef struct info_s
 {
-    list_t *history;
-    list_t *alias;
-} info_t;
+list_t *history;
+list_t *alias;
+}
+info_t;
 
 /* command_processing.c */
 int determine_chain(char *command);
@@ -115,7 +116,7 @@ int custom_print_d(int input, int fd);
 char *custom_convert_number(long int num, int base, int flags);
 void custom_remove_comments(char *buffer);
 
-/*file_output_utils.c */
+/* file_output_utils.c */
 void _custom_eputs(char *str);
 int _custom_eputchar(char c);
 int _custom_putfd(char c, int fd);
@@ -128,7 +129,7 @@ int _custom_mysetenv(info_t *info);
 int _custom_myunsetenv(info_t *info);
 int _custom_populate_env_list(info_t *info);
 
-/* history.c */
+/* alias_history.c */
 int _custom_myhistory(info_t *info);
 int _custom_unset_alias(info_t *info, char *str);
 int _custom_set_alias(info_t *info, char *str);
