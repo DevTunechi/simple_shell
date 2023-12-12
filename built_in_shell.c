@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _myhistory - displays the history list, one command by line
+ * _myhistory - function that displays the history list, one command by line
  * @info: Structure containing potential arguments
  * Olatunji and Goodnews
  * Return: 0
@@ -14,7 +14,7 @@ return (0);
 }
 
 /**
- * unset_alias - alias to str
+ * unset_alias - alias to string
  * @info: parameter structure
  * @str: str alias
  * Olatunji and Goodnews
@@ -60,7 +60,7 @@ return (add_node_end(&(info->alias), str, 0) == NULL);
 }
 
 /**
- * print_alias - prints alias str
+ * print_alias - prints alias as str
  * @node: alias node
  * Olatunji and Goodnews
  * Return: 0, 1 on error
@@ -84,7 +84,7 @@ return (1);
 }
 
 /**
- * _myalias - replicates alias builtin
+ * _myalias - replicates alias built-in
  * @info: Struct containing arguments
  * Olatunji and Goodnews
  * Return: 0
