@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * bfree - free pointer and NULLs the add
+ * bfree - function to free pointer and NULLs the add
  * @ptr: add of pointer to be freed
  * Olatunji and Goodnews
  * Return: 1, otherwise 0.
