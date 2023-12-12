@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _myenv - prints current environment
+ * _myenv - function that prints current environment
  * @info: Struct containing arguments.
  * Olatunji and Goodnews
  * Return: 0
@@ -78,7 +78,7 @@ return (0);
 }
 
 /**
- * populate_env_list - pops env linked list
+ * populate_env_list - function that pops env linked list
  * @info: Structure containing potential arguments
  * Olatunji and Goodnews
  * Return: Always 0
