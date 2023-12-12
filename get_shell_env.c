@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * get_environ - returns the string array copy of our environ
+ * get_environ - function that returns the string array copy of our environ
  * @info: Structure containing potential arguments
  * Olatunji and Goodnews
  * Return: Always 0
@@ -19,7 +19,7 @@ return (info->environ);
 }
 
 /**
- * _unsetenv - Remove an environment variable
+ * _unsetenv - function to remove an environment variable
  * @info: Structure containing potential arguments
  * Olatunji and Goodnews
  * Return: 1 on delete, 0 otherwise
@@ -52,7 +52,7 @@ return (info->env_changed);
 }
 
 /**
- * _setenv - Initialize a new environment variable
+ * _setenv - function to Initialize a new environment variable
  * Olatunji and Goodnews
  * @info: Structure containing potential arguments
  * @var: the string env var property
