@@ -26,8 +26,8 @@ return (0);
 /**
  * dup_chars - duplicates characters
  * @pathstr: the PATH string
- * @start: starting index
- * @stop: stopping index
+ * @start: start index
+ * @stop: stop index
  * Goodnews and Olatunji
  * Return: pointer to new buffer
  */
