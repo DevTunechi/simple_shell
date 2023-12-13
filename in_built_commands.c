@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _myexit - exits shell
+ * _myexit - function that exits shell
  * @info: Struct containing arguments
  * Return: exits with a given exit status
  * Olatunji and Goodnews
