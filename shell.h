@@ -258,4 +258,8 @@ int replace_alias(info_t *);
 int replace_vars(info_t *);
 int replace_string(char **, char *);
 
+/* setenv and unsetenv */
+int _mysetenv(info_t *info);
+int _myunsetenv(info_t *info);
+
 #endif
