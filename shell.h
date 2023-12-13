@@ -199,6 +199,12 @@ int _myhelp(info_t *);
 /* Goodnews */
 int _myhistory(info_t *);
 int _myalias(info_t *);
+int unset_alias(info_t *info, char *str);
+int _myhistory(info_t *info);
+int set_alias(info_t *info, char *str);
+int print_alias(list_t *node);
+int _myalias(info_t *info);
+
 
 
 /* Olatunji */
