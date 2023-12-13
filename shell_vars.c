@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * is_chain - checks if the current char in buffer ischain delimiter
+ * is_chain - checks if the current char in buffer is chain delimiter
  * @info: the parameter struct
  * @buf: the character buffer
  * @p: address of the current position in buf
@@ -72,7 +72,7 @@ j = len;
 }
 
 /**
- * replace_alias - changes aliases in tokenized string
+ * replace_alias - changes aliases in a tokenized string
  * @info: the parameter struct
  * Authors: Goodnews and Olatunji
  * Return: 1 if replaced, 0 otherwise
