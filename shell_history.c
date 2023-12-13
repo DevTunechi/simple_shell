@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * get_history_file - obtains the history file
+ * get_history_file - obtains the file history
  * @info: parameter structure
  * Olatunji and Goodnews
  * Return: allocated string containing the history file
@@ -55,7 +55,7 @@ return (1);
 }
 
 /**
- * read_history - reads history from file
+ * read_history - reads file history
  * @info: the parameter structure
  * Olatunji and Goodnews
  * Return: histcount on success, 0 otherwise
