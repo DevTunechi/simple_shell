@@ -80,7 +80,7 @@ return (built_in_ret);
 }
 
 /**
- * find_cmd - finds the command in a PATH
+ * find_cmd - function that finds the command in a PATH
  * @info: the parameter
  * Goodnews and Olatunji
  * Return: void
