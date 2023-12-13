@@ -21,11 +21,15 @@ print_error(info, "Illegal number: ");
 _eputs(info->argv[1]);
 _eputchar('\n');
 exit_status = (1);
-} else {
+}
+else
+{
 info->err_num = exitcheck;
 exit_status = (-2);
 }
-} else{
+}
+else
+{
 info->err_num = -1;
 exit_status = (-2);
 }
