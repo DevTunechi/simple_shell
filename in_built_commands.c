@@ -9,24 +9,27 @@
 
 int _myexit(info_t *info)
 {
-int exitcheck;
+int exit_status = 0;
 
 if (info->argv[1])
 {
-exitcheck = _erratoi(info->argv[1]);
+int exitcheck = _erratoi(info->argv[1]);
 if (exitcheck == -1)
 {
 info->status = 2;
 print_error(info, "Illegal number: ");
 _eputs(info->argv[1]);
 _eputchar('\n');
-return (1);
+exit_status = (1);
+} else {
+info->err_num = exitcheck;
+exit_status = (-2);
 }
-info->err_num = _erratoi(info->argv[1]);
-return (-2);
-}
+} else{
 info->err_num = -1;
-return (-2);
+exit_status = (-2);
+}
+return (exit_status);
 }
 
 /**
