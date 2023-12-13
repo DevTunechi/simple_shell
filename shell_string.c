@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _strcpy - copies string
+ * _strcpy - string copy to copy string
  * @dest: destination
  * @src: source
  * Olatunji and Goodnews
@@ -24,7 +24,7 @@ return (dest);
 }
 
 /**
- * _strdup - dups a str
+ * _strdup - duplicates a str
  * @str: the str to duplicate
  * Olatunji and Goodnews
  * Return: pointer to duplicated str
