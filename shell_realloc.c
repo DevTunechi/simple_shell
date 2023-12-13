@@ -19,7 +19,7 @@ return (s);
 }
 
 /**
- * ffree - frees a str of strings
+ * ffree - frees a string of strings
  * @pp: str of strings
  * Goodnews and Olatunji
  */
@@ -36,7 +36,7 @@ free(a);
 }
 
 /**
- * _realloc - realloc a block of memory
+ * _realloc - reallocate a block of memory
  * @ptr: pointer to previously allocated block
  * @old_size: byte size of the previous block
  * @new_size: byte size of new block
