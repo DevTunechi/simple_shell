@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _erratoi - converts str to int
+ * _erratoi - converts string to integer
  * @s: str to be converted
  * Return: 0, -1 on failure
  *  Olatunji and Goodnews
