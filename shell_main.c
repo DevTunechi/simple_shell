@@ -2,8 +2,8 @@
 
 /**
  * main - entry point
- * @ac: argc
- * @av: argv
+ * @ac: argc (argument count)
+ * @av: argv (argument vector)
  * Olatunji and Goodnews
  * Return: 0 on success, 1 on error
  */
