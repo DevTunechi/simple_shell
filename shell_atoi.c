@@ -29,7 +29,7 @@ return (0);
 }
 
 /**
- *_isalpha - check alphabetic char
+ *_isalpha - check alphabetic characters
  *@c: char to input
  * Olatunji and Goodnews
  *Return: 1 if c is alphabet, else 0
@@ -44,7 +44,7 @@ return (0);
 }
 
 /**
- *_atoi - converts a str to int
+ *_atoi - converts a string to an integer
  *@s: str to be converted
  * Olatunji and Goodnews
  *Return: 0 converted number otherwise
