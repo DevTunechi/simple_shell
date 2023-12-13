@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * list_len - decides length of linked list
+ * list_len - function that decides length of linked list
  * @h: points to first node
  * Olatunji and Goodnews
  * Return: size of the list
