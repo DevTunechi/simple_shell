@@ -49,7 +49,7 @@ replace_vars(info);
 }
 
 /**
- * free_info - frees info_t struct
+ * free_info - function that frees info_t struct
  * @info: struct add
  * Olatunji and Goodnews
  * @all: true if freeing all
