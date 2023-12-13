@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * add_node - adds a node to the start of kinked list
+ * add_node - adds a node to the start of linked list
  * @head: address of the pointer to head node
  * @str: str field of node
  * @num: node index used by history
@@ -35,7 +35,7 @@ return (new_head);
 }
 
 /**
- * add_node_end - adds a node to the end of list
+ * add_node_end - adds a node to the end of a list
  * @head: address of the pointer to head node
  * @str: string field of the node
  * @num: node index used by history
