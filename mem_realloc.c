@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * *_memset - fill memory with const byte
+ * *_memset - fills memory with const byte
  * @s: pointer to mem area
  * @b: byte to fill *s
  * @n: amount of byte to fill
  * Olatunji and Goodnews
- * Return: pointer to mem area
+ * Return: pointer to memory area
  */
 
 char *_memset(char *s, char b, unsigned int n)
@@ -38,7 +38,7 @@ free(a);
 /**
  * _realloc - block of memory
  * @ptr: pointer to previous malloc
- * @old_size: byte size of previous mem block
+ * @old_size: byte size of previous memory block
  * @new_size: byte size
  * Olatunji and Goodnews
  * Return: pointer to old block
