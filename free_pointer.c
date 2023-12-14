@@ -3,7 +3,7 @@
 /**
  * bfree - a pointer, NULLs the add
  * @ptr: add f pointer to free
- * Olatunji and Goodnews
+ * Olatunji Oluwadare and Goodnews Akpan
  * Return: 1, otherwise 0.
  */
 
