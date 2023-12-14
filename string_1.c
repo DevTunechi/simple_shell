@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
- * _strcpy - copy string
- * @dest: dest
+ * _strcpy - copies a string
+ * * @dest: dest
  * @src: source
  * Olatunji and Goodnews
  * Return: pointer to dest
