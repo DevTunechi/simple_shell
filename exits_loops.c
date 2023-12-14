@@ -44,7 +44,7 @@ return (builtin_ret);
 }
 
 /**
- * find_builtin - builtin command
+ * find_builtin - A builtin command
  * @info: parameter and info struct
  * Olatunji and Goodnews
  * Return: -1 0 1 and 2
