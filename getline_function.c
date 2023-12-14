@@ -2,6 +2,14 @@
 
 #define BUFFER_SIZE 1024
 
+/**
+ * mygetline - custom finction to get and read input from stdin
+ * @line_size: pointer to store the size
+ * @newlinePos: a pointer to the location of  newline character
+ * Return: on sucess, pointer to the allocated line
+ *
+ */
+
 char *mygetline(size_t *line_size) {
     static char buffer[BUFFER_SIZE];
     static size_t index = 0;
