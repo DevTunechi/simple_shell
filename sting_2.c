@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _strlen - ret len of str
+ * _strlen - returns len of str
  * @s: str len to check
  * Olatunji and Goodnews
  * Return: int len of str
