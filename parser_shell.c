@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * is_cmd - decides if file is executable command
+ * is_cmd - to decide if file is executable command
  * @info: info struct
  * @path: path to file
  * Olatunji and Goodnews
@@ -24,7 +24,7 @@ return (0);
 }
 
 /**
- * dup_chars - copies chars
+ * dup_chars - copies characters
  * @pathstr: the PATH string
  * @start: index
  * @stop: stopping index
