@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * clear_info - inititialize info_t struct
+ * clear_info - initialize info_t struct
  * @info: struct add
  * Goodnews and Olatunji
  */
