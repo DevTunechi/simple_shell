@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * get_environ - returns the string array ofenviron
+ * get_environ - returns the string array of environ
  * @info: Struct containing potential args
  * Goodnews and Olatunji
  * Return: 0
